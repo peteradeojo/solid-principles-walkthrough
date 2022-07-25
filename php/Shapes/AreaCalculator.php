@@ -4,6 +4,9 @@ namespace Shapes;
 
 class AreaCalculator
 {
+	/**
+	 * @var ShapeInterface[]|ManageShapeInterface[] $shapes
+	 */
 	protected $shapes;
 
 	public function __construct($shapes = [])
@@ -16,7 +19,7 @@ class AreaCalculator
 		$area = [];
 		foreach ($this->shapes as $shape) {
 			if (is_a($shape, ShapeInterface::class)) {
-				$area[] = $shape->area();
+				$area[] = $shape->calculate();
 				continue;
 			}
 		}

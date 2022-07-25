@@ -2,7 +2,7 @@
 
 namespace Shapes;
 
-class Circle implements ShapeInterface
+class Circle implements ShapeInterface, ManageShapeInterface
 {
 	public float $radius;
 
@@ -14,5 +14,10 @@ class Circle implements ShapeInterface
 	public function area()
 	{
 		return pi() * pow($this->radius, 2);
+	}
+
+	public function calculate()
+	{
+		return $this->area();
 	}
 }

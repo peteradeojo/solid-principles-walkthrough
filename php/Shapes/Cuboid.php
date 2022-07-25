@@ -2,7 +2,7 @@
 
 namespace Shapes;
 
-class Cuboid implements ShapeInterface, SolidShapeInterface
+class Cuboid implements ShapeInterface, SolidShapeInterface, ManageShapeInterface
 {
 	public float $length;
 	public float $width;
@@ -23,5 +23,10 @@ class Cuboid implements ShapeInterface, SolidShapeInterface
 	public function volume()
 	{
 		return $this->height * $this->area();
+	}
+
+	public function calculate()
+	{
+		return $this->volume();
 	}
 }

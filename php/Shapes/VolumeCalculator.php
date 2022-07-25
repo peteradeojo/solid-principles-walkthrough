@@ -4,6 +4,11 @@ namespace Shapes;
 
 class VolumeCalculator extends AreaCalculator
 {
+	/**
+	 * @var SolidShapeInterface[]|ManageShapeInterface[] $shapes
+	 */
+	protected $shapes;
+
 	public function __construct($shapes = [])
 	{
 		parent::__construct($shapes);
@@ -14,7 +19,7 @@ class VolumeCalculator extends AreaCalculator
 		$sum = 0;
 		foreach ($this->shapes as $shape) {
 			if (is_a($shape, SolidShapeInterface::class)) {
-				$sum += $shape->volume();
+				$sum += $shape->calculate();
 				continue;
 			}
 		}

@@ -2,7 +2,7 @@
 
 namespace Shapes;
 
-class Square implements ShapeInterface
+class Square implements ShapeInterface, ManageShapeInterface
 {
 	public float $length;
 
@@ -14,5 +14,10 @@ class Square implements ShapeInterface
 	public function area()
 	{
 		return pow($this->length, 2);
+	}
+
+	public function calculate()
+	{
+		return $this->area();
 	}
 }
