@@ -16,10 +16,9 @@ class AreaCalculator
 	{
 		$area = [];
 		foreach ($this->shapes as $shape) {
-			if (is_a($shape, Circle::class)) {
-				$area[] = pi() * pow($shape->radius, 2);
-			} elseif (is_a($shape, Square::class)) {
-				$area[] = pow($shape->length, 2);
+			if (is_a($shape, ShapeInterface::class)) {
+				$area[] = $shape->area();
+				continue;
 			}
 		}
 
