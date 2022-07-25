@@ -15,8 +15,5 @@ $shapes = [
 ];
 
 $areas = new AreaCalculator($shapes);
-$output = new SumCalculatorOutputter($areas);
 
-echo $output->JSON();
-echo "\n";
-echo $output->HTML();
+echo $areas->output();
