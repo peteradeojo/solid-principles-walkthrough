@@ -4,7 +4,6 @@ namespace Shapes;
 
 class AreaCalculator
 {
-
 	protected $shapes;
 
 	public function __construct($shapes = [])
