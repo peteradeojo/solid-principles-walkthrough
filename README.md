@@ -8,4 +8,4 @@ The SOLID Principles are
 - [x] Open-Closed Principle
 - [x] Liskov Substitution Principle
 - [x] Interface Segregation Principle
-- [ ] Dependency Inversion Principle
+- [x] Dependency Inversion Principle
