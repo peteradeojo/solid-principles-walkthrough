@@ -1,7 +1,7 @@
 import ManageShapeInterface from "./ManageShapeInterface";
 import ShapeInterface from "./ShapeInterface";
 
-export default class Square implements ShapeInterface, ManageShapeInterface {
+export default class Square implements ShapeInterface {
   length: number;
 
   constructor(length: number) {

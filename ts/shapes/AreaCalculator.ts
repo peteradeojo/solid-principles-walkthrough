@@ -8,6 +8,6 @@ export default class AreaCalculator {
   }
 
   sum(): number {
-    return this.shapes.reduce((acc, shape) => acc + shape.calculate(), 0);
+    return this.shapes.reduce((acc, shape) => acc + shape.area(), 0);
   }
 }

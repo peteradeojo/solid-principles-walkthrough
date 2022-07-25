@@ -1,7 +1,7 @@
 import ManageShapeInterface from "./ManageShapeInterface";
 import ShapeInterface from "./ShapeInterface";
 
-export default class Circle implements ShapeInterface, ManageShapeInterface {
+export default class Circle implements ShapeInterface {
   radius: number;
 
   constructor(radius: number) {

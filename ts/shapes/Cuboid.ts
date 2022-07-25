@@ -3,7 +3,7 @@ import ShapeInterface from "./ShapeInterface";
 import SolidShapeInterface from "./SolidShapeInterface";
 
 export default class Cuboid
-  implements ShapeInterface, SolidShapeInterface, ManageShapeInterface
+  implements ShapeInterface, SolidShapeInterface
 {
   height: number;
   length: number;

@@ -1,5 +1,5 @@
 import ManageShapeInterface from "./ManageShapeInterface";
 
-export default interface SolidShapeInterface extends ManageShapeInterface {
+export default interface SolidShapeInterface {
   volume(): number;
 }

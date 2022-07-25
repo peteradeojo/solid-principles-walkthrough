@@ -8,6 +8,6 @@ export default class VolumeCalculator {
   }
 
   public sum() {
-    return this.shapes.reduce((acc, shape) => acc + shape.calculate(), 0);
+    return this.shapes.reduce((acc, shape) => acc + shape.volume(), 0);
   }
 }
